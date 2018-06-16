@@ -3,17 +3,17 @@
         {
             question: "Зимой и летом одним цветом",
             answers: ['яблоко', "ёлка", "сосед Петрович"],
-            rightAnswer: 1
+            rightAnswer: '1'
         },
         {
             question: "Висит груша, нельзя скушать",
             answers: ['яблоко', "соседская груша", "лампочка"],
-            rightAnswer: 2
+            rightAnswer: '2'
         },
         {
             question: "1 + '1'?",
             answers: ["строка 11", 2],
-            rightAnswer: 0
+            rightAnswer: '0'
         }
     ];
 
@@ -28,7 +28,7 @@
                 console.log(i + ': ' + question.answers[i]);
 
             }
-            let answer = prompt('Введите номер ответа', '');
+            let answer = prompt('Введите номер ответа. Для остановки игры введите stop', '');
             getAnswer(answer);
         });
 
@@ -36,11 +36,16 @@
 
     function getAnswer(answer) {
         if (answer === 'stop') throw 'stop';
-        if (questions[counter].rightAnswer === +answer) {
+        if (questions[counter].rightAnswer === answer) {
             counter++;
             console.log('Правильно');
             console.log('Ваш результат: ' + counter);
             console.log('---------------------');
+        } else if (answer === null) {
+            counter = 0;
+            console.log('Вы проиграли, начинаем заново!');
+            console.log('---------------------');
+            startGame()
         } else {
             counter = 0;
             console.log('Вы проиграли, начинаем заново!');
@@ -51,7 +56,7 @@
             console.log('Поздравляем, Вы прошли игру!')
         }
     }
-
+    startGame();
 }());
 
 
@@ -59,3 +64,9 @@
 
 
 
+// } else {
+//     counter = 0;
+//     console.log('Вы проиграли, начинаем заново!');
+//     console.log('---------------------');
+//     startGame();
+// }
