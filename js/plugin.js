@@ -21,21 +21,11 @@
 
 
     function startGame() {
-
-        questions.forEach(function (question) {
-            console.log(question.question);
-            for (let i = 0; i < question.answers.length; i++) {
-                console.log(i + ': ' + question.answers[i]);
-
-            }
-            let answer = prompt('Введите номер ответа. Для остановки игры введите stop', '');
-            getAnswer(answer);
-        });
-
+        askQuestion();
     }
 
     function getAnswer(answer) {
-        if (answer === 'stop') throw 'stop';
+        if (answer === 'stop') throw 'Игра остановлена';
         if (questions[counter].rightAnswer === answer) {
             counter++;
             console.log('Правильно');
@@ -56,7 +46,23 @@
             console.log('Поздравляем, Вы прошли игру!')
         }
     }
+
+    function askQuestion () {
+        questions.forEach(function (question) {
+            console.log(question.question);
+            for (let i = 0; i < question.answers.length; i++) {
+                console.log(i + ': ' + question.answers[i]);
+
+            }
+            let answer = prompt('Введите номер ответа. Для остановки игры введите stop', '');
+
+            getAnswer(answer);
+
+        });
+    }
+
     startGame();
+
 }());
 
 
