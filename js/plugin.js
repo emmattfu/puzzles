@@ -26,21 +26,15 @@
 
     function getAnswer(answer) {
         if (answer === 'stop') throw 'Игра остановлена';
-        if (questions[counter].rightAnswer === answer) {
+         if (questions[counter].rightAnswer === answer) {
             counter++;
             console.log('Правильно');
             console.log('Ваш результат: ' + counter);
             console.log('---------------------');
         } else if (answer === null) {
-            counter = 0;
-            console.log('Вы проиграли, начинаем заново!');
-            console.log('---------------------');
-            startGame()
+            repeatGame();
         } else {
-            counter = 0;
-            console.log('Вы проиграли, начинаем заново!');
-            console.log('---------------------');
-            startGame();
+           repeatGame();
         }
         if (counter === questions.length) {
             console.log('Поздравляем, Вы прошли игру!')
@@ -61,10 +55,16 @@
         });
     }
 
+    function repeatGame() {
+        counter = 0;
+        console.log('Вы проиграли, начинаем заново!');
+        console.log('---------------------');
+        startGame()
+    }
+
     startGame();
 
 }());
-
 
 
 
