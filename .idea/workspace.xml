@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5c549ce-10c1-4308-b10e-ada56af1ab37" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/plugin.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="plugin.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/plugin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1445">
-              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            <state relative-caret-position="255">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="11" selection-end-line="34" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -125,14 +124,16 @@
       <workItem from="1529169533266" duration="9025000" />
       <workItem from="1529214260796" duration="507000" />
       <workItem from="1529222324991" duration="563000" />
+      <workItem from="1529228028017" duration="237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25912000" />
+    <option name="totallyTimeSpent" value="26149000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24960254" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -165,6 +166,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/plugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -216,8 +231,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/plugin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1445">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        <state relative-caret-position="255">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="11" selection-end-line="34" selection-end-column="28" />
         </state>
       </provider>
     </entry>

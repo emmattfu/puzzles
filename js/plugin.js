@@ -31,8 +31,6 @@
             console.log('Правильно');
             console.log('Ваш результат: ' + counter);
             console.log('---------------------');
-        } else if (answer === null) {
-            repeatGame();
         } else {
            repeatGame();
         }
